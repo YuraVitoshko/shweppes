@@ -246,7 +246,47 @@ body {
   object-fit: contain;
   display: block;
 }
+.top-hero__image .bottle--old {
+  opacity: 0;
+  transform: translateX(-50%);
+  animation: oldBottleAnim 3.25s ease forwards;
+  animation-delay: 0.4s;
+}
+.top-hero__image .bottle--new {
+  opacity: 0;
+  transform: translateX(-70%);
+  animation: newBottleAnim 3.25s ease forwards;
+  animation-delay: 2.4s;
+}
 
+@keyframes oldBottleAnim {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+@keyframes newBottleAnim {
+  0% {
+    transform: translateX(-70%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .bottom-hero {
   position: relative;
 }
@@ -336,8 +376,7 @@ body {
   }
 }
 .top-hero__box-anim,
-.top-hero__text,
-.top-hero__image {
+.top-hero__text {
   opacity: 0;
   transform: translateY(1.25rem);
   animation: fadeInUp 0.8s ease forwards;
@@ -349,10 +388,6 @@ body {
 
 .top-hero__text {
   animation-delay: 0.4s;
-}
-
-.top-hero__image {
-  animation-delay: 0.6s;
 }
 .history-block01 {
   padding-left: 3rem;
@@ -1708,14 +1743,23 @@ body {
   .bottom-hero__text-border {
     margin-left: -3%;
   }
-  .top-hero__image {
+  .bottle--old {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: oldBottleAnim 3.25s ease forwards;
     animation-delay: 0.2s;
   }
+  .bottle--new {
+    opacity: 0;
+    transform: translateX(-70%);
+    animation: newBottleAnim 3.25s ease forwards;
+    animation-delay: 2.2s;
+  }
   .top-hero__box-anim {
-    animation-delay: 0.4s;
+    animation-delay: 0.5s;
   }
   .top-hero__text {
-    animation-delay: 0.6s;
+    animation-delay: 0.7s;
   }
   .fresh-look {
     padding-top: 1.875rem;
