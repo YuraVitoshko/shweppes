@@ -3,6 +3,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NZKW6KH7B"></script>
+		<script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-2NZKW6KH7B');
+		</script>
 		<link rel="preload" href="./assets/fonts/gothampro_medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/gothampro_light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/gothampro_bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -10,8 +21,8 @@
 		<link rel="preload" href="./assets/fonts/gothampro.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
 		<title>shhweppse</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1753963979201"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1753963979201">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1753979792326"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1753979792326">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -39,7 +50,11 @@
 								</div>
 							</div>
 							<div class="top-hero__image">
-								<img src="./assets/img/hero-image.png" alt="Image">
+								<img src="./assets/img/hero-image-old.png" alt="Image">
+								<!--
+<img class="bottle bottle--old" src="@img/hero-image-old.png" alt="Old Bottle">
+<img class="bottle bottle--new" src="@img/hero-image-new.png" alt="New Bottle">
+-->
 							</div>
 						</div>
 						<div class="hero__bottom bottom-hero">
@@ -439,28 +454,35 @@
 					</section>
 				</div>
 			</main>
+			<!--
+<footer data-fls-footer class="footer">
+<div class="footer__decor">
+<img src="@img/footer-decor.png" alt="Image">
+</div>
+<div class="footer__container">
+<div class="footer__top">
+<div class="footer__info">Продюсерка:</div>
+<div class="footer__info">Дизайнерка: <span>Ольга Мірошниченко</span></div>
+<div class="footer__info">Редакторка: <span>Людмила Гріцфельдт</span></div>
+</div>
+<div class="footer__bottom">
+<div class="footer__logo">
+<img src="@img/logo-white.svg" alt="logo">
+</div>
+<div class="footer__year">© 2025</div>
+</div>
+</div>
+</footer>
+-->
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__decor">
 					<img src="./assets/img/footer-decor.png" alt="Image">
 				</div>
 				<div class="footer__container">
-					<div class="footer__top">
-						<div class="footer__info">Продюсерка:</div>
-						<div class="footer__info">
-							Дизайнерка:
-							<span>Ольга Мірошниченко</span>
-						</div>
-						<div class="footer__info">
-							Редакторка:
-							<span>Людмила Гріцфельдт</span>
-						</div>
+					<div class="footer__logo">
+						<img src="./assets/img/logo-white.svg" alt="logo">
 					</div>
-					<div class="footer__bottom">
-						<div class="footer__logo">
-							<img src="./assets/img/logo-white.svg" alt="logo">
-						</div>
-						<div class="footer__year">© 2025</div>
-					</div>
+					<div class="footer__year">© 2025</div>
 				</div>
 			</footer>
 		</div>

@@ -148,3 +148,14 @@ class ScrollWatcher {
   }
 }
 document.querySelector("[data-fls-watcher]") ? window.addEventListener("load", () => new ScrollWatcher({})) : null;
+window.addEventListener("load", () => {
+  const heroImage = document.querySelector(".top-hero__image img");
+  setTimeout(() => {
+    heroImage.style.transition = "opacity 1s ease";
+    heroImage.style.opacity = "0";
+    setTimeout(() => {
+      heroImage.src = "assets/img/hero-image-new.png";
+      heroImage.style.opacity = "1";
+    }, 1e3);
+  }, 2e3);
+});

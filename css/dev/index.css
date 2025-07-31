@@ -122,24 +122,8 @@ body {
 }
 .footer__container {
   display: grid;
-  row-gap: 5.3125rem;
-}
-.footer__top {
-  justify-self: center;
-}
-.footer__info {
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-}
-.footer__info span {
-  font-weight: 400;
-}
-.footer__bottom {
-  justify-self: center;
-  display: grid;
   row-gap: 1.5625rem;
+  justify-content: center;
 }
 .footer__logo {
   max-width: 8.25rem;
@@ -249,11 +233,18 @@ body {
   line-height: 1.33;
 }
 .top-hero__image {
-  flex: 0 0 17.625rem;
-  max-width: 17.625rem;
+  flex: 0 0 16.1875rem;
+  max-width: 16.1875rem;
+  aspect-ratio: 259/700;
+  position: relative;
 }
 .top-hero__image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .bottom-hero {
@@ -1707,10 +1698,12 @@ body {
     font-size: 1rem;
   }
   .top-hero__image {
-    max-width: 7.125rem;
+    width: 7.125rem;
+    z-index: 5;
     position: absolute;
     top: 5.625rem;
     right: 2.1875rem;
+    aspect-ratio: 100/268;
   }
   .bottom-hero__text-border {
     margin-left: -3%;
@@ -1743,9 +1736,6 @@ body {
   .footer {
     padding-top: 3.75rem;
   }
-  .footer__info {
-    font-size: 1rem;
-  }
   .footer__year {
     font-size: 0.875rem;
   }
@@ -1753,9 +1743,6 @@ body {
 @media (min-width: 22.5em) and (max-width: 120em) {
   .footer {
     padding-top: clamp( 3.75rem , 2.66826923076875rem  +  4.8076923077vw , 8.4375rem );
-  }
-  .footer__info {
-    font-size: clamp( 1rem , 0.8846153846125rem  +  0.5128205128vw , 1.5rem );
   }
   .footer__year {
     font-size: clamp( 0.875rem , 0.73076923076875rem  +  0.641025641vw , 1.5rem );
@@ -1911,9 +1898,6 @@ body {
 @media (min-width: 120em) {
   .footer {
     padding-top: 8.4375rem;
-  }
-  .footer__info {
-    font-size: 1.5rem;
   }
   .footer__year {
     font-size: 1.5rem;
