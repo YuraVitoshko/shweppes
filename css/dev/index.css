@@ -302,8 +302,9 @@ body {
   row-gap: 1.25rem;
   margin-bottom: 3.125rem;
 }
-.bottom-hero__text span {
+.bottom-hero__text a {
   font-family: "gothampro_bold";
+  display: inline;
 }
 .bottom-hero__text p {
   opacity: 0;
@@ -2106,5 +2107,10 @@ body {
   }
   .fresh-look__content {
     margin-left: 17.8125rem;
+  }
+}
+@media (any-hover: hover) {
+  .bottom-hero__text a:hover {
+    text-decoration: underline;
   }
 }
